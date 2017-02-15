@@ -35,7 +35,9 @@ a:hover {
   text-align: center;
   justify-content: center;
 }
-
+p {
+  margin: 10px;
+}
 .pokemon{
   max-width: 600px;
   background-color: rgb(255, 255, 255);
@@ -44,6 +46,29 @@ a:hover {
   box-sizing: border-box;
   border: 15px inset;
   border-radius: 100px;
+  border-top-color: rgba(255, 0, 0, .5);
+  border-left-color: rgba(255, 0, 0, .5);
+  border-right-color: rgba(225, 225, 225, .5);
+  border-bottom-color: rgba(225, 225, 225, .5);
+}
+
+input[type=text], [type=number]{
+  border: 2px solid red;
+  border-radius: 4px;
+  width: 300px;
+  padding: 20px;
+  margin: 5px 20%;
+  text-align: center;
+  font-size: 1em;
+}
+
+
+
+input[type=button], [type=submit], [type=update] {
+  padding: 15px;
+  border: 3px inset;
+  margin: 5px auto;
+  background-color: rgb(255, 255, 255);
   border-top-color: rgba(255, 0, 0, .5);
   border-left-color: rgba(255, 0, 0, .5);
   border-right-color: rgba(225, 225, 225, .5);

@@ -1,21 +1,25 @@
 <h2>Update this Pokemon's stats</h2>
+
+<div class="pokemon">
 <form action="/pokemons/<%= @pokemon.id %>" method="post">
   <input type="hidden" name="_method" value="put">
 
-  <p><label for="pokemon[name]">Name:</label>
-  <input type="text" name="pokemon[name]" value="<%= @pokemon.name %>"></p>
+  <p><label for="pokemon[name]">Name:</label></p>
+  <input type="text" name="pokemon[name]" value="<%= @pokemon.name %>">
 
-  <p><label for="pokemon[poke_type]">Pokemon Type:</label>
-  <input type="text" name="pokemon[poke_type]" value="<%= @pokemon.poke_type %>"></p>
+  <p><label for="pokemon[poke_type]">Pokemon Type:</label></p>
+  <input type="text" name="pokemon[poke_type]" value="<%= @pokemon.poke_type %>">
 
-<p><label for="pokemon[cp]">CP:</label>
-  <input type = "number" name="pokemon[cp]" value="<%= @pokemon.cp %>"></p>
+  <p><label for="pokemon[cp]">CP:</label></p>
+  <input type = "number" name="pokemon[cp]" value="<%= @pokemon.cp %>">
 
-  <p><h2><input type="submit" value="Update">
-</form></h2></p>
+  <p><input type="submit" value="Update">
+</form></p>
 
-<h2>Delete this Pokemon's entry</h2>
+
 <form action="/pokemons/<%= @pokemon.id %>" method="post">
-  <p><h2><input type="hidden" name="_method" value="delete">
-  <input class="button-delete" type="submit" value="Release!"></h2></p>
+  <p><input type="hidden" name="_method" value="delete">
+  <input class="button-delete" type="submit" value="Release!"></p>
 </form>
+</div>
+<h3>Back<a href="/pokemons">(<)</a></h3>

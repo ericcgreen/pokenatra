@@ -1,6 +1,6 @@
 <h2>Pokemon</h2>
 <h3>Discover a new Pokemon <a href="pokemons/new"> (+)</a></h3>
-
+<div class="pokemon">
   <% @pokemons.each do |pokemon| %>
     <p>
       <a href="/pokemons/<%= pokemon.id %>">
@@ -10,3 +10,4 @@
 
 
   <% end %>
+</div>
