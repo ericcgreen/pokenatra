@@ -12,10 +12,10 @@ a, p, h2, h3 {
   text-align: center;
 }
 
-
 body {
   background-image: url(../images/pokedex.png);
   background-attachment: fixed;
+  background-position: center;
   background-repeat: no-repeat;
   font-family: "Pokemon", monospace;
   letter-spacing: .25em;
@@ -37,10 +37,10 @@ a:hover {
 }
 
 .pokemon{
-  min-width: 375px;
+  max-width: 600px;
   background-color: rgb(255, 255, 255);
   padding: 10px;
-  margin: 40px;
+  margin: 40px auto;
   box-sizing: border-box;
   border: 15px inset;
   border-radius: 100px;
